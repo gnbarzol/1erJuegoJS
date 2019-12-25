@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Simon Dice</title>
+    <title>Gary Dice</title>
     <link rel="stylesheet" href="./style.css">
     
 </head>
 <body>
+    <div class="header">
+        <p>Nivel : </p>
+        <label id='nivel' for="nivel">0</label> 
+    </div>
     <div class="gameboard">
-        <div id="celeste" class="color celeste left"></div>
-        <div id="violeta" class="color violeta right"></div>
-        <div id="naranja" class="color naranja left"></div>
-        <div id="verde" class="color verde right"></div>
+        <div id="celeste" class="color celeste left" data-color="celeste"></div>  <!--Al poner data-loquesea eso va a aparecer en el JS dataset para poder usarlo-->
+        <div id="violeta" class="color violeta right" data-color="violeta"></div>
+        <div id="naranja" class="color naranja left" data-color="naranja"></div>
+        <div id="verde" class="color verde right" data-color="verde"></div>
         <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Empezar Juego!</button>
     </div>
+    <div class="footer"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script src="Juego.js"></script>
 </body>
 </html>

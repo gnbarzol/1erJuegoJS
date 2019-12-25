@@ -1,21 +1,48 @@
 body{
-    background-color: rgb(200, 227, 250);
+    background-color: rgb(167, 222, 231);
     margin: 0;
+    height: 100vh; /*Ocupa toda la pantalla disponible*/
+}
+
+.header{
+    background-color: brown;
+    height: 8vh;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /*Ocupa toda la pantalla disponible*/
+}
+
+.header :first-child{
+    margin: 0;
+    font-size: 30px;
+    color: white;
+
+}
+.header :last-child{
+    margin: 0;
+    font-size: 30px;
+    color: white;
+    padding-left: 10px;
 }
 
 .gameboard{
     height: 100vh;
     width: 100vh;
-    border-radius: 50%;
     overflow: hidden;
+    border-radius: 50%;
+    margin: 70px auto;
     max-height: 60vh;
     max-width: 60vh;
 }
 
+.footer{
+    background-color: rgb(30, 109, 255);
+    height: 7vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
 .color{
     height: 50%;
     width: 50%;
@@ -59,12 +86,16 @@ body{
 }
 
 .btn-start{
-    width: 400px;
+    width: 450px;
     height: 100px;
     background-color: #ecf0f1;
     color: #2c3e50;
     font-size: 2.5rem;
     position: absolute;
-    top: calc(50% - 50px);
-    left: calc(50% - 200px);
+    top: calc(50% - 60px);
+    left: calc(50% - 225px);
+} 
+
+.hide{
+    display: none;  /*Me oculta el elemento*/
 }
