@@ -148,6 +148,6 @@ class Juego{
 function empezarJuego(){
     //window.juego = new Juego(); Me permite ver el objeto juevo por consola
     var juego = new Juego();
-    
+    console.log(`Falta agregar tiempo para cada nivel, puntaje, 404 page.`);
 }
 
